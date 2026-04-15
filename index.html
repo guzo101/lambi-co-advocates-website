@@ -41,7 +41,7 @@
   <main id="main-content">
     <section class="hero section">
       <div class="container hero-grid">
-        <div>
+        <div class="hero-copy">
           <p class="eyebrow">Legal Confidence. Practical Results.</p>
           <h1>Welcome to LAMBI &amp; Co. Advocates</h1>
           <p class="hero-support">We support individuals, families, and businesses with clear legal advice and professional representation in Zambia.</p>
@@ -94,6 +94,36 @@
       </div>
     </section>
 
+    <section class="section section-muted" id="common-legal-issues">
+      <div class="container">
+        <h2>Common Legal Issues in Zambia</h2>
+        <p class="hero-support">Common legal matters we handle include:</p>
+        <ul class="issues-grid" id="issues-list">
+          <li class="issue-item">Land and Property Disputes</li>
+          <li class="issue-item">Family Law (Divorce, Custody, Maintenance)</li>
+          <li class="issue-item">Wills, Probate and Succession</li>
+          <li class="issue-item">Employment and Labour Disputes</li>
+          <li class="issue-item">Debt Recovery and Contract Enforcement</li>
+          <li class="issue-item">Business and Corporate Compliance</li>
+          <li class="issue-item">Civil Litigation and Dispute Resolution</li>
+          <li class="issue-item">Conveyancing and Property Transfers</li>
+          <li class="issue-item">Immigration and Work Permit Advisory</li>
+          <li class="issue-item">Insurance and Compensation Claims</li>
+          <li class="issue-item">Criminal Defence Advisory</li>
+          <li class="issue-item">Tax and Regulatory Matters</li>
+        </ul>
+        <div class="issues-actions">
+          <input
+            class="issues-search"
+            id="issues-search"
+            type="search"
+            placeholder="Search legal topics"
+            aria-label="Search legal topics">
+          <a class="btn btn-primary" href="./practice-areas.html">View All Topics</a>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-muted">
       <div class="container">
         <h2>Find Our Office</h2>
@@ -117,12 +147,24 @@
         <h2>Take a Short Office Tour</h2>
         <p class="hero-support">Watch a quick tour of our office and client meeting space.</p>
         <div class="video-panel">
-          <video class="office-tour-video" controls preload="metadata" poster="./assets/logo.png">
+          <video class="office-tour-video" controls muted playsinline preload="metadata" poster="./assets/logo.png">
             <source src="./assets/linkedin-video.mp4" type="video/mp4">
             Your browser does not support HTML5 video playback.
           </video>
         </div>
         <p class="video-note">Office tour video: <strong>assets/linkedin-video.mp4</strong>.</p>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="book-appointment">
+      <div class="container">
+        <h2>Book an Appointment Instantly</h2>
+        <p class="hero-support">Use the scheduler below to choose a convenient time. The Calendly booking form will collect your email and contact details before confirming your appointment.</p>
+        <div
+          class="calendly-inline-widget"
+          data-url="https://calendly.com/lambi-co-advocates/consultation?hide_gdpr_banner=1"
+          style="min-width:320px;height:700px;"></div>
+        <p class="video-note">If your Calendly link changes, update the <strong>data-url</strong> in this section.</p>
       </div>
     </section>
 
@@ -182,6 +224,7 @@
   </footer>
 
   <script src="./blog.js"></script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
   <script src="./site.js"></script>
 </body>
 </html>

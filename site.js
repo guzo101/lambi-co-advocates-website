@@ -8,3 +8,19 @@ if (menuToggle && nav) {
     nav.classList.toggle("nav-open");
   });
 }
+
+const issuesSearch = document.getElementById("issues-search");
+const issuesList = document.getElementById("issues-list");
+
+if (issuesSearch && issuesList) {
+  const issuesItems = Array.from(issuesList.querySelectorAll(".issue-item"));
+
+  issuesSearch.addEventListener("input", () => {
+    const query = issuesSearch.value.trim().toLowerCase();
+
+    issuesItems.forEach((item) => {
+      const visible = item.textContent.toLowerCase().includes(query);
+      item.style.display = visible ? "" : "none";
+    });
+  });
+}

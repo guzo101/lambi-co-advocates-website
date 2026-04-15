@@ -211,6 +211,29 @@ h3 {
   color: var(--brand);
 }
 
+main h1,
+main h2 {
+  text-align: center;
+}
+
+main .hero-copy h1,
+main .hero-copy .eyebrow,
+main .hero-copy .hero-support,
+main .page-hero .eyebrow,
+main .page-hero .hero-support,
+main .section > .container > .hero-support {
+  text-align: center;
+  margin-inline: auto;
+}
+
+main .hero-card h2,
+main .info-card h2,
+main .info-card h3,
+main .contact-panel h2,
+main .blog-card h2 {
+  text-align: left;
+}
+
 h1 {
   font-size: clamp(1.7rem, 3.5vw, 2.4rem);
 }
@@ -313,6 +336,40 @@ p {
 .info-card {
   padding: 1.1rem 1.2rem;
   font-size: 0.9rem;
+}
+
+.issues-grid {
+  margin-top: 1.4rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  padding: 0;
+}
+
+.issue-item {
+  list-style: none;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.72rem 0.84rem;
+  font-weight: 500;
+  color: #31435f;
+}
+
+.issues-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+  margin-top: 1.25rem;
+}
+
+.issues-search {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.68rem 0.75rem;
+  font: inherit;
+  background: #fff;
 }
 
 .blog-toolbar {
@@ -448,6 +505,15 @@ p {
   color: var(--text-muted);
 }
 
+.calendly-inline-widget {
+  margin-top: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  background: #fff;
+  overflow: hidden;
+}
+
 .section-cta-inline {
   margin-top: 1.1rem;
 }
@@ -555,6 +621,15 @@ p {
     grid-template-columns: 1fr 1.05fr;
   }
 
+  .issues-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .issues-actions {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
   .blog-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -566,6 +641,10 @@ p {
 
 @media (min-width: 1024px) {
   .card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .issues-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
