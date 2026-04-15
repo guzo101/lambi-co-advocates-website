@@ -306,6 +306,19 @@ p {
   min-height: min(720px, calc(100vh - 10rem));
 }
 
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.hero-copy .hero-cta-group {
+  justify-content: center;
+}
+
 .hero-card,
 .info-card,
 .contact-panel {
@@ -320,6 +333,8 @@ p {
   background: rgba(255, 255, 255, 0.08);
   border-color: rgba(255, 255, 255, 0.18);
   box-shadow: none;
+  width: min(100%, 360px);
+  margin-inline: auto;
 }
 
 .hero-card h2 {
@@ -625,6 +640,11 @@ p {
   .hero-grid {
     grid-template-columns: 1fr 360px;
     gap: 2.4rem;
+  }
+
+  .hero-card {
+    justify-self: end;
+    margin-inline: 0;
   }
 
   .card-grid {
