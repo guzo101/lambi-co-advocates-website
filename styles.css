@@ -198,6 +198,19 @@ textarea:focus-visible {
   padding: 3.2rem 0;
 }
 
+.site-lock-notice {
+  padding: 1rem 0;
+  background: #efe4d7;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-lock-notice p {
+  margin: 0;
+  font-weight: 600;
+  color: var(--brand);
+  text-align: center;
+}
+
 .section-muted {
   background: var(--surface-muted);
 }
@@ -261,7 +274,7 @@ p {
 
 .hero {
   background-image:
-    linear-gradient(112deg, rgba(49, 34, 25, 0.86), rgba(49, 34, 25, 0.6)),
+    linear-gradient(112deg, rgba(72, 54, 42, 0.45), rgba(72, 54, 42, 0.22)),
     url("./assets/Background.jpg");
   background-size: cover;
   background-position: center;
@@ -632,6 +645,13 @@ p {
   margin: 0;
   color: #bdbdbd;
   font-size: 0.9rem;
+}
+
+.is-disabled-control {
+  opacity: 0.55;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+  text-decoration: none !important;
 }
 
 .primary-nav.nav-open {
