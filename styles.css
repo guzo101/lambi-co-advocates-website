@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 :root {
-  --bg: #f5f4f1;
+  --bg: #f3efe9;
   --surface: #ffffff;
-  --surface-muted: #fbf8f3;
-  --text: #1d2430;
-  --text-muted: #5a6475;
-  --border: #d9d6cf;
-  --brand: #0f2341;
-  --brand-soft: #1d3459;
-  --gold: #b99758;
-  --gold-soft: #d4b980;
+  --surface-muted: #f7f2eb;
+  --text: #2e241d;
+  --text-muted: #6e5d4f;
+  --border: #d8cdc1;
+  --brand: #4b3529;
+  --brand-soft: #6a4d38;
+  --gold: #b89a72;
+  --gold-soft: #d0b693;
   --radius: 12px;
-  --shadow: 0 14px 30px rgba(15, 35, 65, 0.08);
+  --shadow: 0 14px 30px rgba(75, 53, 41, 0.1);
 }
 
 *,
@@ -261,7 +261,7 @@ p {
 
 .hero {
   background-image:
-    linear-gradient(112deg, rgba(10, 23, 43, 0.88), rgba(10, 23, 43, 0.62)),
+    linear-gradient(112deg, rgba(49, 34, 25, 0.86), rgba(49, 34, 25, 0.6)),
     url("./assets/Background.jpg");
   background-size: cover;
   background-position: center;
@@ -382,7 +382,7 @@ p {
   border-radius: 10px;
   padding: 0.72rem 0.84rem;
   font-weight: 500;
-  color: #31435f;
+  color: #4f3d30;
 }
 
 .issues-actions {
@@ -554,9 +554,9 @@ p {
 }
 
 .site-footer {
-  border-top: 1px solid #4e5b6b;
-  background: #3f4a58;
-  color: #e8edf3;
+  border-top: 1px solid #5b4434;
+  background: #3b2a20;
+  color: #f2e8da;
   padding: 2.4rem 0 1.2rem;
 }
 
@@ -573,7 +573,7 @@ p {
 }
 
 .site-footer .logo {
-  color: #f5f8fc;
+  color: #f6ede0;
   font-size: 1.15rem;
 }
 
@@ -583,7 +583,7 @@ p {
 }
 
 .footer-title {
-  color: #fff;
+  color: #f9efe1;
   margin-bottom: 0.45rem;
   font-size: 1.05rem;
 }
@@ -593,11 +593,11 @@ p {
 }
 
 .site-footer a {
-  color: #7bc4e4;
+  color: #d8bc96;
 }
 
 .footer-bottom {
-  border-top: 1px solid #5b6979;
+  border-top: 1px solid #6b523f;
   margin-top: 1rem;
   padding-top: 0.8rem;
   text-align: center;
@@ -605,7 +605,7 @@ p {
 
 .disclaimer {
   margin: 0;
-  color: #d0d8e2;
+  color: #e0d1bf;
   font-size: 0.9rem;
 }
 
