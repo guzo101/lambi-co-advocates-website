@@ -273,7 +273,9 @@ p {
 }
 
 .hero {
-  background-image: url("./assets/Background.jpg");
+  background-image:
+    linear-gradient(112deg, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.45)),
+    url("./assets/Background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -306,7 +308,7 @@ p {
 }
 
 .hero .hero-support {
-  color: rgba(255, 255, 255, 0.9);
+  color: #ffffff;
 }
 
 .hero-grid {
@@ -355,7 +357,7 @@ p {
 .feature-list {
   margin: 0.5rem 0 0;
   padding-left: 1.1rem;
-  color: rgba(255, 255, 255, 0.88);
+  color: #ffffff;
   font-size: 0.9rem;
 }
 
