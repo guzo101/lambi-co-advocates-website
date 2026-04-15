@@ -267,6 +267,19 @@ p {
   background-position: center;
   background-repeat: no-repeat;
   color: #f8f6f2;
+  min-height: 100vh;
+}
+
+.hero.section {
+  padding: 0;
+}
+
+.hero .container {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  padding-top: clamp(5.5rem, 10vh, 7.5rem);
+  padding-bottom: clamp(2.5rem, 6vh, 4rem);
 }
 
 .hero h1,
@@ -290,6 +303,7 @@ p {
   grid-template-columns: 1fr;
   gap: 1.4rem;
   align-items: center;
+  min-height: min(720px, calc(100vh - 10rem));
 }
 
 .hero-card,
