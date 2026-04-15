@@ -11,7 +11,7 @@
       excerpt:
         "Zambia has launched an open access electricity market, allowing independent power producers to use ZESCO infrastructure and sell directly to bulk consumers.",
       content:
-        "Zambia has launched the electricity open access market. This means Independent Power Producers (IPPs) can now use ZESCO or CEC infrastructure to sell directly to bulk consumers.\n\nThe market is no longer a monopoly; it is now a marketplace.\n\nFrom securing your ERB license to structuring high-stakes PPAs and PPS, we provide the legal foundation for solar developers and commercial consumers to power Zambia's future.\n\nContact us:\nInfo@lambilegal.com\n+260 950 078770",
+        "Zambia has launched the electricity open access market. This means Independent Power Producers (IPPs) can now use ZESCO or CEC infrastructure to sell directly to bulk consumers.\n\nThe market is no longer a monopoly; it is now a marketplace.\n\nFrom securing your ERB license to structuring high-stakes PPAs and PPS, we provide the legal foundation for solar developers and commercial consumers to power Zambia's future.\n\nContact us:\n+260 96 2268294",
       imageUrl: ""
     },
     {
