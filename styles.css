@@ -648,10 +648,11 @@ p {
 }
 
 .is-disabled-control {
-  opacity: 0.55;
+  opacity: 1;
   cursor: not-allowed !important;
   pointer-events: none !important;
   text-decoration: none !important;
+  filter: none !important;
 }
 
 .primary-nav.nav-open {
