@@ -105,10 +105,22 @@ textarea:focus-visible {
 }
 
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   text-decoration: none;
   color: var(--brand);
   font-weight: 700;
   font-size: 0.95rem;
+}
+
+.logo-mark {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 6px;
+  background: #fff;
+  flex: 0 0 auto;
 }
 
 .primary-nav {
@@ -298,6 +310,58 @@ p {
   font-size: 0.9rem;
 }
 
+.blog-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.blog-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.blog-card-content {
+  padding: 1rem 1.1rem;
+}
+
+.blog-meta {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 0.45rem;
+}
+
+.blog-card-image {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+}
+
+.blog-details summary {
+  cursor: pointer;
+  color: var(--brand-soft);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+
+.form-status {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--brand-soft);
+  font-weight: 600;
+}
+
 .page-hero {
   padding-top: 2.4rem;
   padding-bottom: 2rem;
@@ -391,6 +455,11 @@ p {
   font-size: 1.15rem;
 }
 
+.site-footer .logo-mark {
+  width: 34px;
+  height: 34px;
+}
+
 .footer-title {
   color: #fff;
   margin-bottom: 0.45rem;
@@ -459,6 +528,10 @@ p {
     grid-template-columns: 1fr 1.05fr;
   }
 
+  .blog-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .footer-grid {
     grid-template-columns: 1.2fr 1fr 1fr;
   }
@@ -466,6 +539,10 @@ p {
 
 @media (min-width: 1024px) {
   .card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .blog-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
